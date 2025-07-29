@@ -424,7 +424,7 @@ section.visible {
 .cursor {
   display: inline-block;
   width: 3px;
-  height: 1.3em;
+  height: 1em;
   background: var(--accent-color);
   animation: blink 0.8s infinite;
 }
