@@ -134,11 +134,28 @@ nav {
   font-weight: 700;
   color: var(--accent-color);
   letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
   transition: transform 0.3s ease;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: currentColor; /* same color as text */
+  transition: width 0.3s ease;
 }
 
 .logo:hover {
   transform: scale(1.05);
+}
+
+.logo:hover::after {
+  width: 100%;
 }
 
 .nav-links {
